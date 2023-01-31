@@ -8,10 +8,14 @@ We collect two different subjects for our empirical study on DC issues and commo
 
 
 
+ 
 
+ 
 
+ 
 
+ 
 
 # Call Graph Tool Performance
 
-![CG](CG.JPG)
+<img src="CG.JPG" alt="CG" style="zoom: 33%;" />
