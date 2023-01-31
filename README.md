@@ -6,3 +6,12 @@ We collect two different subjects for our empirical study on DC issues and commo
 
 [Subject-B on Open Projects](subjectB/subjectB.html)
 
+
+
+
+
+
+
+# Call Graph Tool Performance
+
+![CG](CG.JPG)
