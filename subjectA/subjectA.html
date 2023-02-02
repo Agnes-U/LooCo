@@ -4,11 +4,12 @@
       <th>ID</th>
       <th>Project</th>
       <th>DC Issue</th>
-      <th>Detailed Dependency Cuts</th>
-      <th>PIP22 Result</th>
-      <th>PIP19 Result</th>
-      <th>SMARTPIP Result</th>
+      <th>Detailed Dependency Cuts (with loosened ones)</th>
+      <th>PIP19</th>
+      <th>PIP22</th>
+      <th>SmartPIP</th>
       <th>Failure Type</th>
+      <th>LooCo's loosening effectiveness</th>
     </tr>
   </thead>
   <tbody>
@@ -21,36 +22,40 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4, C5, C6</td>
     </tr>
     <tr>
       <td>3</td>
       <td>aucome</td>
       <td><a href="https://github.com/AuReMe/aucome/issues/1">Link</a></td>
       <td><a href="cuts/3C1.html">C1</a> <a href="cuts/3C2.html">C2</a> <a href="cuts/3C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>/</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2; <b>R6</b>: C3</td>
     </tr>
     <tr>
       <td>5</td>
       <td>kindred</td>
       <td><a href="https://github.com/jakelever/kindred/issues/16">Link</a></td>
       <td><a href="cuts/5C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>7</td>
       <td>crypto-whale-watching-app</td>
       <td><a href="https://github.com/pmaji/crypto-whale-watching-app/issues/110">Link</a></td>
       <td><a href="cuts/7C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>8</td>
@@ -61,16 +66,18 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1; <b>R6</b>: C2, C3, C4, C5, C6</td>
     </tr>
     <tr>
       <td>9</td>
       <td>pypmml-spark</td>
       <td><a href="https://github.com/autodeployai/pypmml-spark/issues/2">Link</a></td>
       <td><a href="cuts/9C1.html">C1</a> <a href="cuts/9C2.html">C2</a> <a href="cuts/9C3.html">C3</a> <a href="cuts/9C4.html">C4</a> <a href="cuts/9C5.html">C5</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C2, C3, C4, C5; <b>R6</b>: C1</td>
     </tr>
     <tr>
       <td>10</td>
@@ -81,86 +88,95 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12</td>
     </tr>
     <tr>
       <td>11</td>
       <td>WavesGatewayFramework</td>
       <td><a href="https://github.com/jansenmarc/WavesGatewayFramework/issues/26">Link</a></td>
       <td><a href="cuts/11C1.html">C1</a> <a href="cuts/11C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2</td>
     </tr>
     <tr>
       <td>12</td>
       <td>twitterbots</td>
       <td><a href="https://github.com/duo-labs/twitterbots/issues/1">Link</a></td>
       <td><a href="cuts/12C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>15</td>
       <td>AWSBucketDump</td>
       <td><a href="https://github.com/jordanpotti/AWSBucketDump/issues/17">Link</a></td>
       <td><a href="cuts/15C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>18</td>
       <td>ScrapyRedisBloomFilterBlockCluster</td>
       <td><a href="https://github.com/leffss/ScrapyRedisBloomFilterBlockCluster/issues/1">Link</a></td>
       <td><a href="cuts/18C1.html">C1</a> <a href="cuts/18C2.html">C2</a> <a href="cuts/18C3.html">C3</a> <a href="cuts/18C4.html">C4</a> <a href="cuts/18C5.html">C5</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>19</td>
       <td>unblock_youku_gateway</td>
       <td><a href="https://github.com/glucee/unblock_youku_gateway/issues/3">Link</a></td>
       <td><a href="cuts/19C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>20</td>
       <td>auto_crawler_ptt_beauty_image</td>
       <td><a href="https://github.com/twtrubiks/auto_crawler_ptt_beauty_image/issues/2">Link</a></td>
       <td><a href="cuts/20C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>22</td>
       <td>Indy-node</td>
       <td><a href="https://github.com/hyperledger/indy-node/pull/1389">Link</a></td>
       <td><a href="cuts/22C1.html">C1</a></td>
-      <td>/</td>
       <td>x</td>
+      <td>/</td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R5</b>: C1</td>
     </tr>
     <tr>
       <td>23</td>
       <td>Runcible</td>
       <td><a href="https://github.com/graysonhead/runcible/issues/2">Link</a></td>
       <td><a href="cuts/23C1.html">C1</a> <a href="cuts/23C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C2; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>35</td>
@@ -171,16 +187,18 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>37</td>
       <td>crema</td>
       <td><a href="https://github.com/bmcfee/crema/issues/21">Link</a></td>
       <td><a href="cuts/37C1.html">C1</a> <a href="cuts/37C2.html">C2</a> <a href="cuts/37C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R3</b>: C2, C3; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>40</td>
@@ -191,6 +209,7 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>41</td>
@@ -201,16 +220,18 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R3</b>: C1</td>
     </tr>
     <tr>
       <td>46</td>
       <td>Hidden-Friends-Finder</td>
       <td><a href="https://github.com/musafir-py/Hidden-Friends-Finder/issues/9">Link</a></td>
       <td><a href="cuts/46C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>50</td>
@@ -221,6 +242,7 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R2</b>: C1</td>
     </tr>
     <tr>
       <td>52</td>
@@ -231,6 +253,7 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>55</td>
@@ -241,6 +264,7 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>56</td>
@@ -251,146 +275,161 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>58</td>
       <td>jawfish</td>
       <td><a href="https://github.com/war-and-code/jawfish/issues/9">Link</a></td>
       <td><a href="cuts/58C1.html">C1</a> <a href="cuts/58C2.html">C2</a> <a href="cuts/58C3.html">C3</a> <a href="cuts/58C4.html">C4</a> <a href="cuts/58C5.html">C5</a> <a href="cuts/58C6.html">C6</a> <a href="cuts/58C7.html">C7</a> <a href="cuts/58C8.html">C8</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3, C4, C5, C6, C7, C8; <b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>59</td>
       <td>ltiauthenticator</td>
       <td><a href="https://github.com/jupyterhub/ltiauthenticator/issues/21">Link</a></td>
       <td><a href="cuts/59C1.html">C1</a> <a href="cuts/59C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R3</b>: C2; <b>R5</b>: C1</td>
     </tr>
     <tr>
       <td>65</td>
       <td>dedis-cluster</td>
       <td><a href="https://github.com/hifeiwenchao/dedis-cluster/issues/1">Link</a></td>
       <td><a href="cuts/65C1.html">C1</a> <a href="cuts/65C2.html">C2</a> <a href="cuts/65C3.html">C3</a> <a href="cuts/65C4.html">C4</a> <a href="cuts/65C5.html">C5</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1; <b>R5</b>: C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>66</td>
       <td>django-cumulus</td>
       <td><a href="https://github.com/django-cumulus/django-cumulus/issues/212">Link</a></td>
       <td><a href="cuts/66C1.html">C1</a> <a href="cuts/66C2.html">C2</a> <a href="cuts/66C3.html">C3</a> <a href="cuts/66C4.html">C4</a> <a href="cuts/66C5.html">C5</a> <a href="cuts/66C6.html">C6</a> <a href="cuts/66C7.html">C7</a> <a href="cuts/66C8.html">C8</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C1, C7, C8; <b>R4</b>: C6; <b>R5</b>: C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>73</td>
       <td>flask-mongokat</td>
       <td><a href="https://github.com/FranciscoCarbonell/flask-mongokat/issues/1">Link</a></td>
       <td><a href="cuts/73C1.html">C1</a> <a href="cuts/73C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>77</td>
       <td>imgsync</td>
       <td><a href="https://github.com/alvarolopez/imgsync/issues/2">Link</a></td>
       <td><a href="cuts/77C1.html">C1</a> <a href="cuts/77C2.html">C2</a> <a href="cuts/77C3.html">C3</a> <a href="cuts/77C4.html">C4</a> <a href="cuts/77C5.html">C5</a> <a href="cuts/77C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R2</b>: C4, C5; <b>R6</b>: C1, C2, C3, C6</td>
     </tr>
     <tr>
       <td>78</td>
       <td>iprange-python</td>
       <td><a href="https://github.com/lucasrodcosta/iprange-python/issues/1">Link</a></td>
       <td><a href="cuts/78C1.html">C1</a> <a href="cuts/78C2.html">C2</a> <a href="cuts/78C3.html">C3</a> <a href="cuts/78C4.html">C4</a> <a href="cuts/78C5.html">C5</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>82</td>
       <td>musco-tf</td>
       <td><a href="https://github.com/musco-ai/musco-tf/issues/2">Link</a></td>
       <td><a href="cuts/82C1.html">C1</a> <a href="cuts/82C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2</td>
     </tr>
     <tr>
       <td>83</td>
       <td>musco-pytorch</td>
       <td><a href="https://github.com/musco-ai/musco-pytorch/issues/4">Link</a></td>
       <td><a href="cuts/83C1.html">C1</a> <a href="cuts/83C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2</td>
     </tr>
     <tr>
       <td>86</td>
       <td>program-y</td>
       <td><a href="https://github.com/keiffster/program-y/issues/245">Link</a></td>
       <td><a href="cuts/86C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>92</td>
       <td>pyclics-clustering</td>
       <td><a href="https://github.com/clics/pyclics-clustering/issues/3">Link</a></td>
       <td><a href="cuts/92C1.html">C1</a> <a href="cuts/92C2.html">C2</a> <a href="cuts/92C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>/</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3</td>
     </tr>
     <tr>
       <td>96</td>
       <td>python-bitshares</td>
       <td><a href="https://github.com/bitshares/python-bitshares/issues/272">Link</a></td>
       <td><a href="cuts/96C1.html">C1</a> <a href="cuts/96C2.html">C2</a> <a href="cuts/96C3.html">C3</a> <a href="cuts/96C4.html">C4</a> <a href="cuts/96C5.html">C5</a> <a href="cuts/96C6.html">C6</a> <a href="cuts/96C7.html">C7</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2, C3, C4, C5, C6; <b>R6</b>: C7</td>
     </tr>
     <tr>
       <td>98</td>
       <td>py-redis-pubsub-dict</td>
       <td><a href="https://github.com/Richard-Mathie/py-redis-pubsub-dict/issues/5">Link</a></td>
       <td><a href="cuts/98C1.html">C1</a> <a href="cuts/98C2.html">C2</a> <a href="cuts/98C3.html">C3</a> <a href="cuts/98C4.html">C4</a> <a href="cuts/98C5.html">C5</a> <a href="cuts/98C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1; <b>R6</b>: C2, C3, C4, C5, C6</td>
     </tr>
     <tr>
       <td>99</td>
       <td>rdfframework</td>
       <td><a href="https://github.com/KnowledgeLinks/rdfframework/issues/24">Link</a></td>
       <td><a href="cuts/99C1.html">C1</a> <a href="cuts/99C2.html">C2</a> <a href="cuts/99C3.html">C3</a> <a href="cuts/99C4.html">C4</a> <a href="cuts/99C5.html">C5</a> <a href="cuts/99C6.html">C6</a> <a href="cuts/99C7.html">C7</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C6; <b>R2</b>: C3, C7; <b>R3</b>: C4; <b>R4</b>: C1, C2, C5</td>
     </tr>
     <tr>
       <td>107</td>
@@ -401,126 +440,139 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>108</td>
       <td>gmssl</td>
       <td><a href="https://github.com/knitmesh/gmssl/issues/4">Link</a></td>
       <td><a href="cuts/108C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>111</td>
       <td>sockeye</td>
       <td><a href="https://github.com/awslabs/sockeye/issues/764">Link</a></td>
       <td><a href="cuts/111C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1</td>
     </tr>
     <tr>
       <td>114</td>
       <td>target-datadotworld</td>
       <td><a href="https://github.com/datadotworld/target-datadotworld/issues/18">Link</a></td>
       <td><a href="cuts/114C1.html">C1</a> <a href="cuts/114C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>116</td>
       <td>django-television</td>
       <td><a href="https://github.com/pztrick/django-television/issues/3">Link</a></td>
       <td><a href="cuts/116C1.html">C1</a> <a href="cuts/116C2.html">C2</a> <a href="cuts/116C3.html">C3</a> <a href="cuts/116C4.html">C4</a> <a href="cuts/116C5.html">C5</a> <a href="cuts/116C6.html">C6</a> <a href="cuts/116C7.html">C7</a> <a href="cuts/116C8.html">C8</a> <a href="cuts/116C9.html">C9</a> <a href="cuts/116C10.html">C10</a> <a href="cuts/116C11.html">C11</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C2, C3, C4, C5, C6, C7, C8, C9, C10, C11; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>117</td>
       <td>textX-languageserver</td>
       <td><a href="https://github.com/textX/textX-languageserver/issues/7">Link</a></td>
       <td><a href="cuts/117C1.html">C1</a> <a href="cuts/117C2.html">C2</a> <a href="cuts/117C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R2</b>: C2, C3; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>118</td>
       <td>twitter_markov</td>
       <td><a href="https://github.com/fitnr/twitter_markov/issues/14">Link</a></td>
       <td><a href="cuts/118C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>120</td>
       <td>django-glitter</td>
       <td><a href="https://github.com/developersociety/django-glitter/issues/153">Link</a></td>
       <td><a href="cuts/120C1.html">C1</a> <a href="cuts/120C2.html">C2</a> <a href="cuts/120C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R6</b>: C1, C2, C3</td>
     </tr>
     <tr>
       <td>121</td>
       <td>django-glitter-events</td>
       <td><a href="https://github.com/developersociety/django-glitter-events/issues/30">Link</a></td>
       <td><a href="cuts/121C1.html">C1</a> <a href="cuts/121C2.html">C2</a> <a href="cuts/121C3.html">C3</a> <a href="cuts/121C4.html">C4</a> <a href="cuts/121C5.html">C5</a> <a href="cuts/121C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R2</b>: C1, C4; <b>R6</b>: C2, C3, C5, C6</td>
     </tr>
     <tr>
       <td>122</td>
       <td>django-glitter-news</td>
       <td><a href="https://github.com/developersociety/django-glitter-news/issues/28">Link</a></td>
       <td><a href="cuts/122C1.html">C1</a> <a href="cuts/122C2.html">C2</a> <a href="cuts/122C3.html">C3</a> <a href="cuts/122C4.html">C4</a> <a href="cuts/122C5.html">C5</a> <a href="cuts/122C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R2</b>: C1, C4; <b>R6</b>: C2, C3, C5, C6</td>
     </tr>
     <tr>
       <td>124</td>
       <td>mockerena</td>
       <td><a href="https://github.com/FanThreeSixty/mockerena/issues/18">Link</a></td>
       <td><a href="cuts/124C1.html">C1</a> <a href="cuts/124C2.html">C2</a> <a href="cuts/124C3.html">C3</a> <a href="cuts/124C4.html">C4</a> <a href="cuts/124C5.html">C5</a> <a href="cuts/124C6.html">C6</a> <a href="cuts/124C7.html">C7</a> <a href="cuts/124C8.html">C8</a> <a href="cuts/124C9.html">C9</a> <a href="cuts/124C10.html">C10</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R3</b>: C7, C8, C9, C10; <b>R4</b>: C1, C6; <b>R5</b>: C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>125</td>
       <td>nornir</td>
       <td><a href="https://github.com/nornir-automation/nornir/issues/457">Link</a></td>
       <td><a href="cuts/125C1.html">C1</a> <a href="cuts/125C2.html">C2</a> <a href="cuts/125C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>/</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1; <b>R5</b>: C2, C3</td>
     </tr>
     <tr>
       <td>128</td>
       <td>reana-cluster</td>
       <td><a href="https://github.com/reanahub/reana-cluster/issues/253">Link</a></td>
       <td><a href="cuts/128C1.html">C1</a> <a href="cuts/128C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C1; <b>R4</b>: C2</td>
     </tr>
     <tr>
       <td>130</td>
@@ -531,26 +583,29 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2; <b>R6</b>: C3, C4, C5, C6, C7</td>
     </tr>
     <tr>
       <td>131</td>
       <td>ssmash</td>
       <td><a href="https://github.com/garyd203/ssmash/issues/39">Link</a></td>
       <td><a href="cuts/131C1.html">C1</a> <a href="cuts/131C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>133</td>
       <td>TMO4CT</td>
       <td><a href="https://github.com/dvolgyes/TMO4CT/issues/2">Link</a></td>
       <td><a href="cuts/133C1.html">C1</a> <a href="cuts/133C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>257</td>
@@ -561,6 +616,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2, C3, C4, C5, C6</td>
     </tr>
     <tr>
       <td>260</td>
@@ -571,16 +627,18 @@
       <td>x</td>
       <td>x</td>
       <td>A-Failure</td>
+      <td><b>R1</b>: C1</td>
     </tr>
     <tr>
       <td>261</td>
       <td>dork</td>
       <td><a href="https://github.com/iamdork/dork/issues/1">Link</a></td>
       <td><a href="cuts/261C1.html">C1</a> <a href="cuts/261C2.html">C2</a> <a href="cuts/261C3.html">C3</a> <a href="cuts/261C4.html">C4</a> <a href="cuts/261C5.html">C5</a> <a href="cuts/261C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3, C4, C5, C6; <b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>266</td>
@@ -591,6 +649,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>270</td>
@@ -601,6 +660,7 @@
       <td>x</td>
       <td>x</td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C2; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>271</td>
@@ -611,16 +671,18 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2, C3, C4, C5, C6</td>
     </tr>
     <tr>
       <td>272</td>
       <td>grimoirelab-manuscripts</td>
       <td><a href="https://github.com/chaoss/grimoirelab-manuscripts/issues/136">Link</a></td>
       <td><a href="cuts/272C1.html">C1</a> <a href="cuts/272C2.html">C2</a> <a href="cuts/272C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3; <b>R5</b>: C1, C2</td>
     </tr>
     <tr>
       <td>278</td>
@@ -631,36 +693,40 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C13, C14, C15; <b>R4</b>: C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C16, C17, C18</td>
     </tr>
     <tr>
       <td>329</td>
       <td>fossor</td>
       <td><a href="https://github.com/linkedin/fossor/issues/16">Link</a></td>
       <td><a href="cuts/329C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>330</td>
       <td>xontrib-readable-traceback</td>
       <td><a href="https://github.com/vaaaaanquish/xontrib-readable-traceback/issues/4">Link</a></td>
       <td><a href="cuts/330C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1</td>
     </tr>
     <tr>
       <td>331</td>
       <td>video-funnel</td>
       <td><a href="https://github.com/cshuaimin/video-funnel/issues/16">Link</a></td>
       <td><a href="cuts/331C1.html">C1</a> <a href="cuts/331C2.html">C2</a> <a href="cuts/331C3.html">C3</a> <a href="cuts/331C4.html">C4</a> <a href="cuts/331C5.html">C5</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2, C3, C4; <b>R6</b>: C5</td>
     </tr>
     <tr>
       <td>335</td>
@@ -671,36 +737,40 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R5</b>: C1</td>
     </tr>
     <tr>
       <td>337</td>
       <td>superdesk-core</td>
       <td><a href="https://github.com/superdesk/superdesk-core/issues/1892">Link</a></td>
       <td><a href="cuts/337C1.html">C1</a> <a href="cuts/337C2.html">C2</a> <a href="cuts/337C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R3</b>: C3; <b>R4</b>: C1; <b>R5</b>: C2</td>
     </tr>
     <tr>
       <td>339</td>
       <td>docker-cron-cli</td>
       <td><a href="https://github.com/iamfat/docker-cron-cli/issues/4">Link</a></td>
       <td><a href="cuts/339C1.html">C1</a> <a href="cuts/339C2.html">C2</a> <a href="cuts/339C3.html">C3</a> <a href="cuts/339C4.html">C4</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3, C4; <b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>341</td>
       <td>molo.surveys</td>
       <td><a href="https://github.com/praekeltfoundation/molo.surveys/issues/147">Link</a></td>
       <td><a href="cuts/341C1.html">C1</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R5</b>: C1</td>
     </tr>
     <tr>
       <td>346</td>
@@ -711,16 +781,18 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>347</td>
       <td>django-web3-auth</td>
       <td><a href="https://github.com/atereshkin/django-web3-auth/issues/1">Link</a></td>
       <td><a href="cuts/347C1.html">C1</a> <a href="cuts/347C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C2; <b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>349</td>
@@ -731,6 +803,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3, C4; <b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>351</td>
@@ -741,6 +814,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1</td>
     </tr>
     <tr>
       <td>353</td>
@@ -751,16 +825,18 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1</td>
     </tr>
     <tr>
       <td>354</td>
       <td>agora-wot</td>
       <td><a href="https://github.com/oeg-upm/agora-wot/issues/1">Link</a></td>
       <td><a href="cuts/354C1.html">C1</a> <a href="cuts/354C2.html">C2</a> <a href="cuts/354C3.html">C3</a> <a href="cuts/354C4.html">C4</a> <a href="cuts/354C5.html">C5</a> <a href="cuts/354C6.html">C6</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C6; <b>R6</b>: C1, C2, C3, C4, C5</td>
     </tr>
     <tr>
       <td>357</td>
@@ -771,26 +847,29 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1</td>
     </tr>
     <tr>
       <td>359</td>
       <td>django_client_logger</td>
       <td><a href="https://github.com/uw-it-aca/django_client_logger/issues/8">Link</a></td>
       <td><a href="cuts/359C1.html">C1</a> <a href="cuts/359C2.html">C2</a> <a href="cuts/359C3.html">C3</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R6</b>: C1, C2, C3</td>
     </tr>
     <tr>
       <td>362</td>
       <td>piicatcher</td>
       <td><a href="https://github.com/tokern/piicatcher/issues/96">Link</a></td>
       <td><a href="cuts/362C1.html">C1</a> <a href="cuts/362C2.html">C2</a> <a href="cuts/362C3.html">C3</a> <a href="cuts/362C4.html">C4</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R6</b>: C1, C2, C3, C4</td>
     </tr>
     <tr>
       <td>363</td>
@@ -801,6 +880,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>364</td>
@@ -811,6 +891,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R1</b>: C3, C4, C5; <b>R4</b>: C1, C2</td>
     </tr>
     <tr>
       <td>365</td>
@@ -821,16 +902,18 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R4</b>: C1; <b>R5</b>: C2</td>
     </tr>
     <tr>
       <td>366</td>
       <td>zelt</td>
       <td><a href="https://github.com/zalando-incubator/zelt/issues/24">Link</a></td>
       <td><a href="cuts/366C1.html">C1</a> <a href="cuts/366C2.html">C2</a></td>
-      <td><p>&#10003;<p></td>
       <td>x</td>
       <td><p>&#10003;<p></td>
+      <td><p>&#10003;<p></td>
       <td>B-Failure</td>
+      <td><b>R3</b>: C2; <b>R5</b>: C1</td>
     </tr>
     <tr>
       <td>367</td>
@@ -841,6 +924,7 @@
       <td><p>&#10003;<p></td>
       <td><p>&#10003;<p></td>
       <td>C-Failure</td>
+      <td><b>R5</b>: C1, C2, C3</td>
     </tr>
   </tbody>
 </table>
