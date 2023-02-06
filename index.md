@@ -22,6 +22,10 @@ We collected two subjects for our empirical study on DC issues and common develo
 
 ## 2. LooCo realization
 
+### Source Code
+
+The source code of LooCo: [LooCo-code](https://anonymous.4open.science/r/LooCo-code/)
+
 ### Call Graph Tool Comparisons
 
 We built LooCo's call graph constructor based on greatly refining an existing tool Code2flow. For comparisons, we here give our comparisons among our LooCo, original Code2flow, and one state-of-the-art tool PyCG. We use PyCG's macro-benchmark provided in its literature. Results are as follows.
