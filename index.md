@@ -20,7 +20,7 @@ We collected two subjects for our empirical study on DC issues and common develo
 
 ### Source Code
 
-The source code of LooCo: [LooCo-code](https://anonymous.4open.science/r/LooCo-code/)
+The source code of LooCo: [LooCo-code](https://github.com/Agnes-U/LooCo-src/)
 
 ### Call Graph Tool Comparisons
 
