@@ -2,10 +2,6 @@
 
 
 
-*This web is used for paper reviewing only for now.*
-
-*We confirm and guarantee that all links and information involved in this website are anonymous, without any identity to authors.*
-
 
 
 ## 1. Empirical Study and Evaluation
